@@ -38,7 +38,7 @@ DB_URL_SCRIPT = os.getenv("DATABASE_URL_SCRIPT")
 
 @app.route('/refresh_webhook', methods=['GET'])
 def refresh_webhook():
-    render_app_url = "https://server-abdj.onrender.com/register_webhook"
+    render_app_url = "https://server-7kk6.onrender.com/register_webhook"
     url = f"https://api.telegram.org/bot{REGISTER_BOT_TOKEN}/setWebhook?url={render_app_url}"
     try:
         response = requests.get(url, timeout=10)
